@@ -28,8 +28,16 @@ class HandleGithubWebhookEventListener
      */
     public function handle(GitHubWebHookEvent $event)
     {
-        \Log::info($event->event->getType());
-        \Log::info($event->event->getPayload());
+//        \Log::info($event->event->getType());
+//        \Log::info($event->event->getPayload());
+        $payload = $event->event->getPayload();
+        $refs = array_get($payload, 'ref');
+        /**
+         * filter only tags push
+         */
+        if (!str_contains($refs, '/tags/')) {
+            return;
+        }
 
         app('mailer')->send(new PushNotification($event->event, $event->project));
     }
