@@ -4,6 +4,7 @@ namespace App\Listeners;
 
 use App\Events\ExampleEvent;
 use App\Events\GitHubWebHookEvent;
+use App\Mails\PushNotification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 
@@ -29,5 +30,7 @@ class HandleGithubWebhookEventListener
     {
         \Log::info($event->event->getType());
         \Log::info($event->event->getPayload());
+
+        app('mailer')->send(new PushNotification($event->event, $event->project));
     }
 }

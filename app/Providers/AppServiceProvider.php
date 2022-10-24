@@ -83,5 +83,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton('mm.shortlink', function ($app) {
             return new ShortLink();
         });
+
+        $this->app->configure('mail');
+        $this->app->alias('mailer', \Illuminate\Mail\Mailer::class);
+        $this->app->alias('mailer', \Illuminate\Contracts\Mail\Mailer::class);
+        $this->app->alias('mailer', \Illuminate\Contracts\Mail\MailQueue::class);
     }
 }

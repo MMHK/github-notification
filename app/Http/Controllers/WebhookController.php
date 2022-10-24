@@ -24,7 +24,7 @@ class WebhookController extends Controller
             if ($validator->validate($request, $secret)) {
                 // Request is correctly signed
                 $factory = new GitHubEventFactory();
-                event(new GitHubWebHookEvent($factory->buildFromRequest($request)));
+                event(new GitHubWebHookEvent($factory->buildFromRequest($request), $project));
             }
         } catch (\Exception $e) {
             \Log::error($e->getMessage());

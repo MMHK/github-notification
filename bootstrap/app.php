@@ -24,7 +24,7 @@ $app = new Laravel\Lumen\Application(
 );
 
 $app->withFacades([
-    'Illuminate\Support\Facades\Request' => 'Request',
+    'Illuminate\Support\Facades\Mail' => 'Mail',
 ]);
 
 // $app->withEloquent();
@@ -96,6 +96,7 @@ $app->configure('app');
 $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 $app->register(App\Providers\EventServiceProvider::class);
+$app->register(Illuminate\Mail\MailServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

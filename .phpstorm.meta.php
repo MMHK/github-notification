@@ -16,6 +16,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -64,6 +65,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\Illuminate\Container\Container::makeWith(0), map([
         '' => '@',
@@ -72,6 +74,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -120,6 +123,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\Illuminate\Contracts\Container\Container::get(0), map([
         '' => '@',
@@ -128,6 +132,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -176,6 +181,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\Illuminate\Contracts\Container\Container::make(0), map([
         '' => '@',
@@ -184,6 +190,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -232,6 +239,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\Illuminate\Contracts\Container\Container::makeWith(0), map([
         '' => '@',
@@ -240,6 +248,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -288,6 +297,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\App::get(0), map([
         '' => '@',
@@ -296,6 +306,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -344,6 +355,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\App::make(0), map([
         '' => '@',
@@ -352,6 +364,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -400,6 +413,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\App::makeWith(0), map([
         '' => '@',
@@ -408,6 +422,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -456,6 +471,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\app(0), map([
         '' => '@',
@@ -464,6 +480,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -512,6 +529,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\resolve(0), map([
         '' => '@',
@@ -520,6 +538,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -568,6 +587,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
     override(\Psr\Container\ContainerInterface::get(0), map([
         '' => '@',
@@ -576,6 +596,7 @@ namespace PHPSTORM_META {
             'Illuminate\Contracts\Console\Kernel' => \App\Console\Kernel::class,
             'Illuminate\Contracts\Debug\ExceptionHandler' => \App\Exceptions\Handler::class,
             'Illuminate\Contracts\Queue\EntityResolver' => \Illuminate\Database\Eloquent\QueueEntityResolver::class,
+            'Illuminate\Mail\Markdown' => \Illuminate\Mail\Markdown::class,
             'artisan' => \App\Console\Kernel::class,
             'cache' => \Illuminate\Cache\CacheManager::class,
             'cache.store' => \Illuminate\Cache\Repository::class,
@@ -624,6 +645,7 @@ namespace PHPSTORM_META {
             'queue.failer' => \Illuminate\Queue\Failed\DatabaseFailedJobProvider::class,
             'queue.listener' => \Illuminate\Queue\Listener::class,
             'queue.worker' => \Illuminate\Queue\Worker::class,
+            'swift.transport' => \Illuminate\Mail\TransportManager::class,
         ]));
 
 

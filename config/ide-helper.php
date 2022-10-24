@@ -81,7 +81,7 @@ return array(
     'extra' => array(
         'Eloquent' => array('Illuminate\Database\Eloquent\Builder', 'Illuminate\Database\Query\Builder'),
         'Session' => array('Illuminate\Session\Store'),
-        'IM' => array('\Hedeqiang\TenIM\IM'),
+        'Mail' => array('Illuminate\Mail\Mailer'),
     ),
 
     'magic' => array(
