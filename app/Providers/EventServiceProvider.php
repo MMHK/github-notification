@@ -12,8 +12,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        \App\Events\GitHubWebHookEvent::class => [
-            \App\Listeners\HandleGithubWebhookEventListener::class,
+        'App\Events\GitHubWebHookEvent' => [
+            'App\Listeners\HandleGithubWebhookEventListener',
         ],
     ];
 }

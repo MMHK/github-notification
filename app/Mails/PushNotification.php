@@ -4,8 +4,6 @@
 namespace App\Mails;
 
 
-
-use App\Mail\ToManyMailTrait;
 use Illuminate\Mail\Mailable;
 use Swop\GitHubWebHook\Event\GitHubEvent;
 

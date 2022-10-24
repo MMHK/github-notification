@@ -13,23 +13,26 @@ class WebhookController extends Controller
 {
 
     public function callback($project, ServerRequestInterface $request) {
-        \Log::info($project);
-        \Log::info($request->getBody());
-        \Log::info($request->getHeaders());
+//        \Log::info($project);
+//        \Log::info($request->getBody());
+//        \Log::info($request->getHeaders());
 
         $validator = new SignatureValidator();
         $secret = config('services.github.webhook.projects-secret.'.$project, '');
 
         try {
-            if ($validator->validate($request, $secret)) {
-                // Request is correctly signed
-                $factory = new GitHubEventFactory();
-                event(new GitHubWebHookEvent($factory->buildFromRequest($request), $project));
-            }
+            $validator->validate($request, $secret);
         } catch (\Exception $e) {
             \Log::error($e->getMessage());
             \Log::error($e->getTraceAsString());
+            return [
+                false,
+            ];
         }
+
+        // Request is correctly signed
+        $factory = new GitHubEventFactory();
+        event(new GitHubWebHookEvent($factory->buildFromRequest($request), $project));
 
         return [
             true,
