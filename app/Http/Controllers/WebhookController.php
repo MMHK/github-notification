@@ -18,7 +18,7 @@ class WebhookController extends Controller
         \Log::info($request->getHeaders());
 
         $validator = new SignatureValidator();
-        $secret = config('services.github.webhook.projects.'.$project.'.secret', '');
+        $secret = config('services.github.webhook.projects-secret.'.$project, '');
 
         try {
             if ($validator->validate($request, $secret)) {
