@@ -12,9 +12,11 @@ return [
         'webhook' => [
             'projects-secret' => [
                 'github-notification' => env('GITHUB_NOTIFICATION_WEBHOOK_SECRET', ''),
+                'TKP-CG-WMP' => env('TKP_CG_WMP_WEBHOOK_SECRET', ''),
             ],
             'projects-email' => [
                 'github-notification' => env('GITHUB_NOTIFICATION_WEBHOOK_EMAILS', ''),
+                'TKP-CG-WMP' => env('TKP_CG_WMP_WEBHOOK_EMAILS', ''),
             ],
         ],
     ],

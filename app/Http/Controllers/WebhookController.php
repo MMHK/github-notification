@@ -13,7 +13,7 @@ class WebhookController extends Controller
 {
 
     public function callback($project, ServerRequestInterface $request) {
-//        \Log::info($project);
+        \Log::info($project);
 //        \Log::info($request->getBody());
 //        \Log::info($request->getHeaders());
 
